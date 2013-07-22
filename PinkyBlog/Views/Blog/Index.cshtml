@@ -1,0 +1,15 @@
+﻿@model PinkyBlog.Models.BlogPost
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Pinky's Blog</title>
+    </head>
+    <body>
+        <h1>Pinky's Blog!</h1>
+        <h2>@Model.Title</h2>
+        <p>@Model.Published.ToLongDateString()</p>
+        @Html.Raw(Model.Body)
+
+    </body>
+</html>
